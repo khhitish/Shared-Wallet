@@ -24,7 +24,7 @@ contract SharedWallet is Allowance {
     }
     
     function getMoney() external payable {
-        emit MoneyRecieved(msg.sender,msg.value);
+        emit MoneyReceived(msg.sender,msg.value);
     }
     
     receive() external payable {
